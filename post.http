@@ -1,0 +1,25 @@
+POST  http://localhost:8080/produtos/
+Content-type: application/json
+
+{
+    "nome" :  "processador",
+    "descrição": "xeon 1245",
+    "preço": 300
+    
+    
+}
+###
+GET http://localhost:8080/produtos/
+
+###
+POST http://localhost:8080/produtos
+Content-type: application/json
+
+{
+    
+    "nome" :  "quinhentos",
+    "descrição": " 1245",
+    "preço": 50,
+    "userId":7
+    
+}

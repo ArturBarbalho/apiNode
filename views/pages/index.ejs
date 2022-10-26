@@ -1,0 +1,13 @@
+<%- contentFor('card') %>
+
+<% props.forEach( (post) => { %>
+<div class="card   mt-4 " style="max-width: 800px;" >      
+    <div class="card-body">
+        <h4 class="card-title text- "> <%= post.nome %> </h4>
+        <p class="card-text"> <%= post.descrição %> </p>
+        <button class="btn btn-primary"><a href="http://localhost:8080/post/<%=post.id%>">Ver mais</a></button>
+        <button><a href="http://localhost:8080/produtos/<%=post.id%>">remove</a></button>
+    <p class="border mt-2 mb-0 p-1 px-3 "  >posted by: nobuko nosodor</p>
+</div>    
+<%} ) %>
+
